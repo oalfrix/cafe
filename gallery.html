@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Berger Hut</title>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  
+
+</head>
+
+<body>
+	
+<header class="header">
+
+    <nav class="nav containers">
+
+       <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+             <img class="logoimg" src="iconlogo.png">
+          </a>
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+
+       <!--=============== NAV MENU ===============-->
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">Home</a></li>
+
+             <!--=============== DROPDOWN 1 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link"> About Us
+                    <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="about.html#history" class="dropdown__link">
+                         <i class="ri-pie-chart-line"></i>History
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="about.html#admission" class="dropdown__link">
+                         <i class="ri-arrow-up-down-line"></i>Admission
+                      </a>
+                   </li>
+
+                   <li>
+                     <a href="about.html#performance" class="dropdown__link">
+                        <i class="ri-arrow-up-down-line"></i>Performance
+                     </a>
+                  </li>
+
+                   <!--=============== DROPDOWN SUBMENU ===============-->
+                   <li class="dropdown__subitem">
+                      <div class="dropdown__link">
+                         <i class="ri-bar-chart-line"></i> Department <i class="ri-add-line dropdown__add"></i>
+                      </div>
+
+                      <ul class="dropdown__submenu">
+                         <li>
+                            <a href="about.html#chaplancy" class="dropdown__sublink">
+                               <i class="ri-file-list-line"></i> Chaplancy
+                            </a>
+                         </li>
+ 
+                         <li>
+                            <a href="about.html#boarding" class="dropdown__sublink">
+                               <i class="ri-cash-line"></i> Boarding
+                            </a>
+                         </li>
+ 
+                         <li>
+                            <a href="about.html#gamesandsports" class="dropdown__sublink">
+                               <i class="ri-refund-2-line"></i> Games & Sports
+                            </a>
+                         </li>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+
+             
+             
+             <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+
+             <!--=============== DROPDOWN 2 ===============-->
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Management <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="management.html#schoolmanagement" class="dropdown__link">
+                         <i class="ri-user-line"></i> The School Managment
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="management.html#boardofmanagemnt" class="dropdown__link">
+                         <i class="ri-lock-line"></i> The Board Of Management
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="management.html#PTA" class="dropdown__link">
+                         <i class="ri-message-3-line"></i> The Parents Teacher Association 
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="management.html#schooladmin" class="dropdown__link">
+                         <i class="ri-message-3-line"></i> The School Administration 
+                      </a>
+                   </li>
+                </ul>
+             </li>
+
+             <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+       </div>
+    </nav>
+ </header>
+ 
+ <section>
+   <div class="heading-tag">
+     <h4>Gallery</h4>
+   </div>
+ </section>
+ 
+ <section>
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="gallery1.jpg" alt="Image 1" onclick="openModal();currentSlide(1)">
+    </div>
+    <div class="image-item">
+      <img src="gallery2.jpg" alt="Image 2" onclick="openModal();currentSlide(2)">
+    </div>
+    <div class="image-item">
+      <img src="gallery3.jpg" alt="Image 3" onclick="openModal();currentSlide(3)">
+    </div>
+    <div class="image-item">
+      <img src="gallery4.jpg" alt="Image 4" onclick="openModal();currentSlide(4)">
+    </div>
+  </div>
+</section>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <img src="gallery1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="gallery2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="gallery3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="gallery4.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+
+
+<style>
+  
+
+</style>
+ 
+   
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="iconlogo.png" alt="Logo">
+    </div>
+    <nav class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Menu</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p class="footer-text">&copy; 2024 Berger Hut. All rights reserved.</p>
+</footer>
+
+
+
+ <!--=============== MAIN JS ===============-->
+
+ <script src="assets/js/main.js"></script>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+</body>
