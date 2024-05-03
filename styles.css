@@ -457,11 +457,10 @@ background-color: rgba(0,0,0,0.8);
 }
 
 
-.location{
-margin-top: 60px;
-border: #ff0000 solid;
-display: flex;
-flex-wrap: wrap;
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
 }
 
 .location iframe{
