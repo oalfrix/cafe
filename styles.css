@@ -464,9 +464,7 @@ display: flex;
 flex-wrap: wrap;
 }
 
-.location iframe{
-  height: 400px;
-}
+
 
 .contact-info{
 display: flex;
