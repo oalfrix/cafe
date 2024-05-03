@@ -485,6 +485,7 @@ background-color: rgba(0,0,0,0.8);
 
 .location iframe{
   width: 100%;
+  padding-top: 20px;
 }
 
 .contact-info{
