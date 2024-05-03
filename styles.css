@@ -378,7 +378,7 @@ font-size: 20px;
 }
 
 
-/*-------Gallery---------*/
+/*-------Gallery---------
 .modal {
 display: none;
 position: fixed;
@@ -455,6 +455,7 @@ margin-left: 400px;
 .next:hover {
 background-color: rgba(0,0,0,0.8);
 }
+*/
 
 
 .location {
